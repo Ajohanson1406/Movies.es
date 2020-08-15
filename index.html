@@ -4,10 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies.es</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
-    <div class="header">
-        <h1>Movie.es</h1>
+    <div class="app">
+        <div class="header">
+            <div class="logo">
+                <img src="./src/Logo.png" alt="">
+                <span>TOMOE</span>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Busca tu anime, personaje o manga favorito">
+            </div>
+            <div class="user-information">
+                <span>Albert Johanson</span>
+                <div class="profile-picture">
+                    <img src="./src/PIC_PROFILE.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <ul class="Menu-list">
+                <li class="menu-list-item">
+                    <svg class="icon icon-home"><use xlink:href="#icon-home">
+                        <symbol id="icon-home" viewBox="0 0 32 32">
+                            <path d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"></path>
+                            </symbol>
+                    </use></svg>
+                    <p>Home</p>
+                </li>
+                <li class="menu-list-item">
+                    <svg class="icon icon-fire"><use xlink:href="#icon-fire">
+                        <symbol id="icon-fire" viewBox="0 0 32 32">
+                            <path d="M10.031 32c-2.133-4.438-0.997-6.981 0.642-9.376 1.795-2.624 2.258-5.221 2.258-5.221s1.411 1.834 0.847 4.703c2.493-2.775 2.963-7.196 2.587-8.889 5.635 3.938 8.043 12.464 4.798 18.783 17.262-9.767 4.294-24.38 2.036-26.027 0.753 1.646 0.895 4.433-0.625 5.785-2.573-9.759-8.937-11.759-8.937-11.759 0.753 5.033-2.728 10.536-6.084 14.648-0.118-2.007-0.243-3.392-1.298-5.312-0.237 3.646-3.023 6.617-3.777 10.27-1.022 4.946 0.765 8.568 7.555 12.394z"></path>
+                            </symbol>
+                    </use></svg>
+                    <p>Trending</p>
+                </li>
+                <li class="menu-list-item">
+                    <svg class="icon icon-heart"><use xlink:href="#icon-heart">
+                        <symbol id="icon-heart" viewBox="0 0 32 32">
+                            <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
+                            </symbol>
+                    </use></svg>
+                    <p>Most liked</p>
+                </li>
+            </ul>
+        </div>
+        <section class="animes-section">
+            <h2 class="animes-temporada">
+                Temporada Verano
+            </h2>
+            <div class="animes-container">
+                <div class="animes-container-items">
+                    <div class="anime-container-poster">
+                        <img src="./src/Shingeki-poster.jpg" alt="">
+                    </div>
+                    <div class="anime-container-item-info">
+                        <p>Shingeki no Kyojin</p>
+                    </div>
+                </div>
+                <div class="animes-container-items">
+                    <div class="anime-container-poster">
+                        <img src="./src/Shingeki-poster.jpg" alt="">
+                    </div>
+                    <div class="anime-container-item-info">
+                        <p>Shingeki no Kyojin</p>
+                    </div>
+                </div>
+                <div class="animes-container-items">
+                    <div class="anime-container-poster">
+                        <img src="./src/Shingeki-poster.jpg" alt="">
+                    </div>
+                    <div class="anime-container-item-info">
+                        <p>Shingeki no Kyojin</p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="animes-populares">
+                Animes Populares
+            </h2>
+            <div class="animes-container">
+                <div class="animes-container-items">
+                    <div class="anime-container-poster">
+                        <img src="./src/Shingeki-poster.jpg" alt="">
+                    </div>
+                    <div class="anime-container-item-info">
+                        <p>Shingeki no Kyojin</p>
+                    </div>
+                </div>
+                <div class="animes-container-items">
+                    <div class="anime-container-poster">
+                        <img src="./src/Shingeki-poster.jpg" alt="">
+                    </div>
+                    <div class="anime-container-item-info">
+                        <p>Shingeki no Kyojin</p>
+                    </div>
+                </div>
+                <div class="animes-container-items">
+                    <div class="anime-container-poster">
+                        <img src="./src/Shingeki-poster.jpg" alt="">
+                    </div>
+                    <div class="anime-container-item-info">
+                        <p>Shingeki no Kyojin</p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="animes-clasicos">
+                Animes Clasicos
+            </h2>
+            <div class="animes-container">
+                <div class="animes-container-items">
+                    <div class="anime-container-poster">
+                        <img src="./src/Shingeki-poster.jpg" alt="">
+                    </div>
+                    <div class="anime-container-item-info">
+                        <p>Shingeki no Kyojin</p>
+                    </div>
+                </div>
+                <div class="animes-container-items">
+                    <div class="anime-container-poster">
+                        <img src="./src/Shingeki-poster.jpg" alt="">
+                    </div>
+                    <div class="anime-container-item-info">
+                        <p>Shingeki no Kyojin</p>
+                    </div>
+                </div>
+                <div class="animes-container-items">
+                    <div class="anime-container-poster">
+                        <img src="./src/Shingeki-poster.jpg" alt="">
+                    </div>
+                    <div class="anime-container-item-info">
+                        <p>Shingeki no Kyojin</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>

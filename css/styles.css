@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    font-family: Arial;
+}
+
+.app{
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: "header header"
+                         "menu animes";
+    height: 100vh;
+}
+
+.header{
+    grid-area: header;
+    height: auto;
+    display: grid;
+    grid-template-columns: 25% 1fr 20%;
+    grid-template-areas: "logo search-box user";
+    padding: 0 3em;
+    grid-gap: 10px;
+    background: rgb(255,255,255);
+    background: linear-gradient(274deg, rgba(255,255,255,1) 12%, rgba(1,247,239,1) 51%);
+    box-shadow: 0 3px 2px -2px gray;
+    z-index: 5;
+}
+
+.header .logo {
+    grid-area: logo;
+    width: 70px;
+    display: flex;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 60px;
+    margin: 0;
+}
+
+.header .logo span {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.search-box {
+    grid-area: search-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.search-box input {
+    width: 100%;
+    padding: .5em;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.user-information{
+    grid-area: user;
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    justify-content: end;
+    position: relative;
+}
+
+.user-information .profile-picture{
+    width: 40px;
+    border-radius: 100px;
+    margin-left: 10px;
+    position: absolute;
+    right: 0;
+}
+
+.user-information .profile-picture img{
+    width: 100%;
+    border-radius: 100%;
+}
+.user-information span {
+    position: absolute;
+    right: 50px;
+    font-weight: bold;
+
+}
+
+.menu{
+    grid-area: menu;
+    align-content: space-between;
+    display: grid;
+    padding: 3em 0;
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 12%, rgba(1,247,239,1) 51%);
+}
+
+.menu .Menu-list {
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.menu .Menu-list .menu-list-item{
+    padding-bottom: 1em;
+}
+
+.menu .menu-list-item p {
+    font-weight: bold;
+    color: white;
+}
+
+.icon {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: white;
+  }
+
+.animes-section{
+    grid-area: animes;
+    padding: 1em 3em;
+}
+
+.animes-container{
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.animes-container-items {
+    width: 100%;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px gray;
+    border-radius: 10px;
+}
+
+.animes-container-items .anime-container-poster{
+    width: 100%;
+}
+
+.animes-container-items .anime-container-poster img{
+    width: 100%;
+}
+
+.animes-container-items .anime-container-item-info p{
+    font-weight: bold;
+    padding: 0 2em;
+}
+
+@media screen and (max-width: 1024px){
+    .animes-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 20% 1fr;
+    }
+    .header{
+        grid-template-columns: 50% 50% 20%;        
+        grid-template-areas: "logo  user";
+        padding: 0 1em;
+    }
+    .header .logo span{
+        display: none;
+    }
+    .animes-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    .user-information .profile-picture{
+        width: 45px;
+    }
+
+    .user-information span {
+        font-size: 0.7em;
+    }
+    .menu{
+        position: relative;
+       left: -100%;
+    }
+}
+
+
